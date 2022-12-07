@@ -52,6 +52,18 @@ nav{
     margin: auto;
     margin-top: 20px;
 }
+
+.tambah-post{
+  background-color: red;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  box-shadow:
+}
 /*a*/
 a{
   color: unset;
@@ -64,15 +76,20 @@ a:hover{
 
 /* container forum */
 .square-box{
-  margin-top: 30px;
   max-width: 60%;
   min-width: 60%;
-  border: 2px solid; color: black;
+  border: 2px solid; color: grey;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+}
+
+@media screen and (min-width: 100px) {
+  .square-box {
+    width: 100%;
+  }
 }
 
 .textbox{
@@ -92,15 +109,63 @@ textarea{
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+/*berita*/
 
-.tambah-post{
-  background-color: red;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  box-shadow:
+.square-box2{
+  margin-top: 30px;
+  max-width: 60%;
+  min-width: 60%;
+  border: 2px solid; color: grey;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
+
+.container-berita{
+  margin-top: 10px;
+}
+
+.gambar-berita1{
+  width: 30%;
+  height: 100%;
+  padding: 10px;
+  float: left;
+  margin-left: 40px;
+}
+
+.gambar-berita2{
+  width: 30%;
+  height: 100%;
+  padding: 10px;
+  float: right;
+}
+
+/*berita2*/
+
+.column-berita{
+    float: left;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.column-berita2{
+  width: 30%;
+  font-size: smaller;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+@media screen and (max-width: 900px) {
+  .column-berita{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .column-berita2{
+    width: 100%;
+    margin-left: none;
+  }
+}
+
